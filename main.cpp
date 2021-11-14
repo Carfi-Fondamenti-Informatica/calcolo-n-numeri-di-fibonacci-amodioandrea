@@ -1,22 +1,19 @@
 #include <iostream>
 using namespace std;
 int main() {
+  int n,i=1,b=1,a=0,c;
+  cin>>n;
 
-int n;
-cin>>n;
-if(n>=2) {
-
-    int x = 0, y = 1, z;
-    for (int i; i <n; i++) {
-
-        z = x + y;
-        x = y;
-        y = z;
-        cout << x<<endl;
-    }
-}else{
-        cout<<"errore";
-
-}
+  if(n>=2){
+      cout<<b<<endl;
+      for(i=2;i<=n;i++){
+          c=a+b;
+                  cout<<c<<endl;
+          a=b;
+          b=c;
+      }
+  }else{
+      cout<<"errore\n";
+  }
     return 0;
 }
